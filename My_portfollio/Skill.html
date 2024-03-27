@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+<!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill-section {
+            flex: 1;
+            margin-right: 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #2196f3;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-size: 1.2em;
+            color: #2196f3;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #2196f3;
+            transition: width 1s ease-in-out;
+        }
+
+        span {
+            display: block;
+            text-align: right;
+            padding: 5px 0;
+            font-size: 0.8em;
+            color: #777;
+        }
+        .skill h2{
+         color: rgb(222, 17, 140);
+        }
+        
+        
+.header1{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.navbar1 a{
+    display: inline-block;
+    font-size: 25px;
+    color:#840d0d;
+    text-decoration: none ;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 3s;
+    animation: slideTop .5s ease forwards;
+}
+.navbar1 a:hover{
+    color:#0ef ;
+
+}
+/* ... (existing styles) ... */
+
+.home-button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+/* ... (existing styles) ... */
+
+    </style>
+</head>
+
+<body>
+    <div class="about-container">
+        <a href="/" class="home-button"><i class="fas fa-home"></i></a>
+        <div class="about-contents">
+            <!-- ... (your existing content) ... -->
+        </div>
+    </div>
+    <!-- <header class="header1">
+        <nav class="navbar1">
+            <a href="index.html">Home</a>
+  
+        </nav>
+    </header> -->
+    <section>
+        <div class="skill">
+            <h2>My Skills</h2>
+    </section>
+    <section>
+        <!-- <div class="skill">
+            <h2>My Skills</h2> -->
+        <div class="skill-section">
+            <h2>Coding Skills</h2>
+            <ul>
+                <li>
+                    <strong>Web Development</strong>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                    <span>80%</span>
+                </li>
+                <li>
+                    <strong>JavaScript</strong>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                    <span>70%</span>
+                </li>
+                <li>
+                    <strong>HTML5 & CSS3</strong>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                    <span>90%</span>
+                </li>
+                <!-- Add more coding skills as needed -->
+            </ul>
+        </div>
+
+        <div class="skill-section">
+            <h2>Professional Skills</h2>
+            <ul>
+                <li>
+                    <strong>Communication</strong>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                    <span>95%</span>
+                </li>
+                <li>
+                    <strong>Teamwork</strong>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                    <span>85%</span>
+                </li>
+                <li>
+                    <strong>Time Management</strong>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                    <span>90%</span>
+                </li>
+                <!-- Add more professional skills as needed -->
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

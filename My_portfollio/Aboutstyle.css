@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    background-color: #000000; /* Light Grayish Blue */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin:0%;
+    overflow: hidden;
+}
+
+/* ... Existing styles remain unchanged ... */
+
+button {
+    background-color: cyan; /* Blue */
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1% 40%;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: cyan; /* Darker Blue */
+}
+
+.highlighted-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: cyan (0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000; /* Blue */
+}
+
+/* ... Existing styles remain unchanged ... */
+
+
+.about-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(23, 3, 26, 0.1);
+    max-width: 1500px;
+    margin: 50px 50px 50px 50px ;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.about-contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 10%;
+    display:flex;
+    height:0%;
+    max-width: 50%;  
+    height:50%;  
+}
+
+.info-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.personal-info {
+    margin-top: 20px;
+}
+
+.personal-info div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: inline-block;
+    padding: 1px 1px;
+    background: cyan (2, 245, 241);
+    border-radius: 10%;
+    font-size: 16px;
+    color: cyan;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.button:hover{
+    box-shadow: 0 0 5px cyan (99, 117, 26),
+    0 0 25px cyan (57, 82, 34), 0 0 50px cyan,
+    0 0 100px cyan (44, 136, 31), 0 0 200px cyan (36, 151, 47)
+}
+
+.about-container {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .about-contents {
+        flex-direction: column;
+    }
+
+    .image-section,
+    .info-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        border-radius: 8px 8px 0 0;
+    }
+}
+/* Existing styles remain unchanged */
+
+.image-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.highlighted-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 46.2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #c91b1b;
+}
+
+/* Existing styles remain unchanged */
+/* Existing styles remain unchanged */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Existing styles remain unchanged */
+/* ... (existing styles) ... */
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+/* ... (existing styles) ... */

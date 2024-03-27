@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Popup</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .popup-container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .tab-buttons {
+            margin-bottom: 20px;
+        }
+
+        .tab-buttons button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form {
+            display: none;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="popup-container">
+    <div class="tab-buttons">
+        <button onclick="showLoginForm()">Login</button>
+        <button onclick="showSignupForm()">Signup</button>
+    </div>
+
+    <form id="login-form">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button onclick="login()">Login</button>
+    </form>
+
+    <form id="signup-form">
+        <h2>Signup</h2>
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" required>
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" required>
+        <button onclick="signup()">Signup</button>
+    </form>
+</div>
+
+<script>
+    function showLoginForm() {
+        document.getElementById('login-form').style.display = 'block';
+        document.getElementById('signup-form').style.display = 'none';
+    }
+
+    function showSignupForm() {
+        document.getElementById('login-form').style.display = 'none';
+        document.getElementById('signup-form').style.display = 'block';
+    }
+
+    function login() {
+        // Implement login logic here
+        alert('Login successful!');
+    }
+
+    function signup() {
+        // Implement signup logic here
+        alert('Signup successful!');
+    }
+</script>
+
+</body>
+</html>

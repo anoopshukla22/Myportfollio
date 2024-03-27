@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #fafafa;
+    margin: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #006781;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #910a0a;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.about-me {
+    margin: 20px;
+    text-align: center;
+}
+
+.about-me img {
+    max-width: 200px; /* Adjust the size as needed */
+    max-height: 200px; /* Adjust the size as needed */
+    border-radius: 100%; /* Make the image round */
+    margin: 20px 0;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+
+
+.about-me img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(199, 11, 11, 0.3);
+}
+
+.projects, .skills, .certifications, .contact {
+    margin: 40px;
+}
+
+.project, .skill, .certification {
+    margin-bottom: 20px;
+    background-color: #2d2525;
+    border-radius: 50px;
+    padding: 20px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    color: #fff;
+}
+
+.project:hover, .skill:hover, .certification:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill li::before {
+    content: attr(data-percent) '%';
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.skill li:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.certification h3 {
+    color: #3498db;
+}
+
+.project h3 {
+    color: #3498db;
+}
+.skill h3 {
+    color: #3498db;
+}
+.projects h2 {
+    color: #c70c47;
+    text-align: center;
+}
+.skills h2 {
+    color: #c70c47;
+    text-align: center;
+}
+.certifications h2 {
+    color: #c70c47;
+    text-align: center;
+}
+
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.contact a:hover {
+    color: #e74c3c;
+}
+.home-button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+.about-me h2 {
+color: cyan;
+}
+
+header h1 a{
+    font-size: 1em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #910a0a;
+}
